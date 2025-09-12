@@ -11,12 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/style.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.min.js" defer></script>
   </head>
   <body>
     @@include('./partials/_header.html')
-    <main class="page__main">@@include('./partials/_hero.html')</main>
+    <main class="page__main">
+      @@include('./partials/_hero.html') @@include('./partials/_hero2.html')
+      @@include('./partials/_hero3.html') @@include('./partials/_catalog.html')
+    </main>
   </body>
 </html>
