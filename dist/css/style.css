@@ -92,6 +92,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .btn-primary {
@@ -300,7 +303,7 @@ button {
 }
 
 .catalog {
-  padding: 0 20px 16px 22px;
+  padding: 0 20px 24px 22px;
 }
 
 .catalog__wrapper {
@@ -365,4 +368,77 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+}
+
+.slider {
+  aspect-ratio: 16/7;
+  padding: 0 22px 24px;
+}
+
+.slider-swiper {
+  height: 100%;
+  overflow: visible;
+}
+
+.slider .swiper-slide {
+  width: 95% !important;
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  border-radius: 50%;
+  opacity: unset;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4.4px);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.slider .swiper-button-prev svg,
+.slider .swiper-button-next svg {
+  color: #4a4545;
+  width: 24px;
+  height: 24px;
+}
+
+.slider .swiper-button-disabled {
+  display: none;
+}
+
+.slider__card {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 24px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__card--title {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 16px;
+  color: var(--color-white);
+}
+
+.slider__card--subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: var(--color-white);
 }

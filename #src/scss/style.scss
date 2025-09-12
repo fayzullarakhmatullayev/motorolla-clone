@@ -83,7 +83,7 @@ button {
   min-width: 150px;
   text-align: center;
   justify-content: center;
-
+  width: fit-content;
   &-primary {
     background-color: rgb(13, 126, 248);
     border-color: rgb(36, 80, 245);

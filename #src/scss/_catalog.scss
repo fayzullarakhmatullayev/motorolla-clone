@@ -1,10 +1,11 @@
 .catalog {
-  padding: 0 20px 16px 22px;
+  padding: 0 20px 24px 22px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
+
   &__item {
     background-color: rgb(245, 243, 241);
     padding: 35px 24px 24px;
