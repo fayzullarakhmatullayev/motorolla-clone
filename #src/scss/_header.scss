@@ -1,0 +1,11 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  outline: 1px solid red;
+  padding: 20px;
+
+  background-color: var(--color-bg);
+}
