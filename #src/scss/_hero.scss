@@ -1,0 +1,50 @@
+.hero {
+  min-height: calc(100dvh - 72px);
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  color: var(--color-white);
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    &--title {
+      font-weight: 700;
+      font-size: 80px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    &--subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      margin-top: 16px;
+      margin-bottom: 30px;
+      line-height: 22px;
+    }
+
+    &--actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &--btn {
+      padding: 10px 1cqmax 10px 16px;
+      border-radius: 40px;
+      line-height: 18px;
+      font-size: 16px;
+      border: 1px solid var(--color-white);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 150px;
+      text-align: center;
+      justify-content: center;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
