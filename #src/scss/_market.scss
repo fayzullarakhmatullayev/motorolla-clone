@@ -30,9 +30,11 @@
       white-space: nowrap;
       text-align: center;
 
+      transition: all 0.3s ease-in-out;
+      border-bottom: 2px solid transparent;
       &.active {
         color: #001428;
-        border-bottom: 2px solid #001428;
+        border-color: #001428;
         background-color: #fff;
       }
     }

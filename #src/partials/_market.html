@@ -12,13 +12,15 @@
       {{tab.title}}
     </div>
   </div>
-  <div class="market__wrapper">
-    <div class="market__card" v-for="card in selectedShopArray" :key="card.id">
-      <div class="market__card--img">
-        <img :src="card.img" :alt="card.title" />
+  <transition name="fade">
+    <div class="market__wrapper" :key="selectedShopTab">
+      <div class="market__card" v-for="card in selectedShopArray" :key="card.id">
+        <div class="market__card--img">
+          <img :src="card.img" :alt="card.title" />
+        </div>
+        <h3 class="market__card--title">{{card.title}}</h3>
+        <a href="#" class="btn btn-primary">Learn More</a>
       </div>
-      <h3 class="market__card--title">{{card.title}}</h3>
-      <a href="#" class="btn btn-primary">Learn More</a>
     </div>
-  </div>
+  </transition>
 </section>

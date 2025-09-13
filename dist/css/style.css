@@ -123,6 +123,17 @@ button {
   height: 18px;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .title {
   font-weight: 700;
   font-size: 80px;
@@ -588,11 +599,14 @@ button {
   font-weight: 700;
   white-space: nowrap;
   text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
 
 .market__tab--item.active {
   color: #001428;
-  border-bottom: 2px solid #001428;
+  border-color: #001428;
   background-color: #fff;
 }
 
