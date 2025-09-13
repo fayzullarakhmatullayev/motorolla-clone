@@ -14,6 +14,10 @@
   --color-white: #fff;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   font-family: var(--font-montserrat);
   background-color: var(--color-bg);
@@ -100,7 +104,7 @@ button {
 
 .btn-primary {
   background-color: rgb(13, 126, 248);
-  border-color: rgb(36, 80, 245);
+  border-color: rgb(13, 126, 248);
 }
 
 .btn-default {
@@ -543,4 +547,112 @@ button {
   padding: 15px 0;
   color: #fff;
   margin-bottom: 20px;
+}
+
+.market {
+  padding: 45px 22px 60px;
+}
+
+.market__title {
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+
+.market__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 60%;
+  margin: auto;
+  background: 0;
+  max-width: 631px;
+  gap: 6px;
+}
+
+.market__tab--item {
+  padding: 12px 10px;
+  color: rgba(0, 20, 40, 0.2);
+  font-size: 16px;
+  font-family: inherit;
+  background: white;
+  cursor: pointer;
+  border: 0;
+  width: 100%;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.market__tab--item.active {
+  color: #001428;
+  border-bottom: 2px solid #001428;
+  background-color: #fff;
+}
+
+.market__wrapper {
+  padding: 20px 19.5px;
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.market__card {
+  border: 0.5px solid hsla(0, 0%, 100%, 0.0509803922);
+  padding: 26px 18px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.market__card--img {
+  width: 205px;
+  height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.market__card--img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.market__card--title {
+  color: #001428;
+  font-size: 24px;
+  padding: 24px 0 46px;
+  min-height: 120px;
+}
+
+.market__card .btn {
+  margin-top: auto;
 }

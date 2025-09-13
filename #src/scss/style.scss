@@ -13,6 +13,10 @@
   --color-white: #fff;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   font-family: var(--font-montserrat);
 
@@ -87,7 +91,7 @@ button {
   width: fit-content;
   &-primary {
     background-color: rgb(13, 126, 248);
-    border-color: rgb(36, 80, 245);
+    border-color: rgb(13, 126, 248);
   }
   &-default {
     border-color: var(--color-black);
@@ -127,3 +131,4 @@ button {
 @import 'catalog';
 @import 'slider';
 @import 'shop';
+@import 'market';
