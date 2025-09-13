@@ -253,6 +253,26 @@
     </div>
   </transition>
 </section>
+ <section class="blog">
+  <div class="blog-swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" v-for="blog in blogs" :key="blog.id">
+        <a href="#" class="blog__card" :style="{backgroundImage: `url(${blog.img})`}">
+          <h3 class="blog__card--title">{{blog.title}}</h3>
+          <div class="blog__card--overlay">
+            <a href="#" class="btn btn-white">Learn more</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="blog__action">
+    <button class="blog__action--btn" @click="toggleAutoplayHandler()">
+      <img src="/icons/pause.svg" alt="play" v-if="isPlaying" />
+      <img src="/icons/play.svg" alt="play" v-else />
+    </button>
+  </div>
+</section>
 
     </main>
 
