@@ -68,6 +68,7 @@ button {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -90,6 +91,12 @@ button {
   }
   &-default {
     border-color: var(--color-black);
+    color: var(--color-black);
+  }
+
+  &-white {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
     color: var(--color-black);
   }
   svg {
@@ -119,3 +126,4 @@ button {
 @import 'hero';
 @import 'catalog';
 @import 'slider';
+@import 'shop';

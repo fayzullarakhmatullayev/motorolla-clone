@@ -71,6 +71,7 @@ button {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -104,6 +105,12 @@ button {
 
 .btn-default {
   border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+.btn-white {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
   color: var(--color-black);
 }
 
@@ -373,10 +380,12 @@ button {
 .slider {
   aspect-ratio: 16/7;
   padding: 0 22px 24px;
+  position: relative;
 }
 
 .slider-swiper {
   height: 100%;
+  padding-bottom: 40px;
   overflow: visible;
 }
 
@@ -406,6 +415,53 @@ button {
 
 .slider .swiper-button-disabled {
   display: none;
+}
+
+.slider__dots {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -2.5%;
+}
+
+.slider__dots .swiper-pagination {
+  left: 10%;
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: 10;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__dots .swiper-pagination-bullet {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin-left: 10px;
+  padding: 0;
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  border: unset;
+  opacity: 0.5;
+}
+
+.slider__dots .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 54px;
+  height: 10px;
+  border-radius: 10px;
 }
 
 .slider__card {
@@ -441,4 +497,50 @@ button {
   font-weight: 500;
   margin-bottom: 24px;
   color: var(--color-white);
+}
+
+.shop {
+  padding: 22px;
+}
+
+.shop__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.shop__card {
+  min-height: 650px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 80px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.shop__card--title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.shop__card--subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 0;
+  color: #fff;
+  margin-bottom: 20px;
 }
