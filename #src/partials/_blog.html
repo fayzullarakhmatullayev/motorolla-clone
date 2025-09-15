@@ -2,12 +2,12 @@
   <div class="blog-swiper swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="blog in blogs" :key="blog.id">
-        <a href="#" class="blog__card" :style="{backgroundImage: `url(${blog.img})`}">
+        <div class="blog__card" :style="{backgroundImage: `url(${blog.img})`}">
           <h3 class="blog__card--title">{{blog.title}}</h3>
           <div class="blog__card--overlay">
             <a href="#" class="btn btn-white">Learn more</a>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
