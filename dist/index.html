@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motorolla</title>
-    <link rel="icon" href="/icons/favicon.ico" />
+    <title>Trend Mobile</title>
+    <link rel="icon" href="/icons/logo-black.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,14 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="header">
   <div class="header__wrapper">
     <div class="header__left">
-      <a href="/" class="header__logo"><img src="img/logo.webp" alt="logo" /></a>
+      <a href="/" class="header__logo"><img src="icons/logo-black.svg" alt="logo" /></a>
       <nav class="header__nav">
         <a href="#" class="header__nav--item">smartphones</a>
         <a href="#" class="header__nav--item">accessories</a>
@@ -42,14 +42,14 @@
 </header>
 
     <main class="page__main" id="app" v-cloak>
-      <section class="hero">
+      <section class="hero" style="background-image: url(img/hero-1.png)">
   <div class="hero__content">
-    <h1 class="hero__content--title">Dare to Dazzle</h1>
+    <!-- <h1 class="hero__content--title">Dare to Dazzle</h1>
     <div class="hero__content--subtitle">
       Turn heads with the <b>Motorola Razr</b> and <b>Moto Buds Loop</b><br />
       created with crystals by Swarovski<sup>®</sup> .
-    </div>
-    <div class="hero__content--actions">
+    </div> -->
+    <div class="hero__content--actions" style="margin-top: 50%">
       <a href="#" class="btn">
         Learn More
         <svg
@@ -73,16 +73,16 @@
     </div>
   </div>
 </section>
- <section class="hero hero-2">
-  <div class="hero__content">
-    <h1 class="hero__content--title">Make it iconic</h1>
+ <section class="hero" style="background-image: url(img/hero-2.png)">
+  <div class="hero__content" style="margin-top: 15%">
+    <!-- <h1 class="hero__content--title">Make it iconic</h1>
 
     <div class="hero__content--subtitle">
       Style that fits in your palm. Intelligence that fits your life.<br />
       Meet<b> motorola razr 60 ultra </b>and<b> motorola razr 60.</b>
-    </div>
+    </div> -->
     <div class="hero__content--actions">
-      <a href="#" class="btn">
+      <a href="#" class="btn btn-primary">
         Offers
         <svg
           width="24"
@@ -105,15 +105,15 @@
   </div>
 </section>
 
-      <section class="hero hero-3">
+      <section class="hero hero-3" style="background-image: url(img/hero-3.png)">
   <div class="hero__content">
-    <h2 class="hero__content--text">
+    <!-- <h2 class="hero__content--text">
       Beautifully built.<br />
       durably designed.
-    </h2>
-    <div class="hero__content--actions">
+    </h2> -->
+    <!-- <div class="hero__content--actions">
       <a href="#" class="btn btn-primary"> Buy now </a>
-    </div>
+    </div> -->
   </div>
 </section>
  <section class="catalog">
@@ -163,30 +163,40 @@
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
-        <div class="slider__card" style="background-image: url(img/slider-1.jpg)">
-          <div class="slider__card--title">
+        <div class="slider__card" style="background-image: url(img/slider-1.png)">
+          <!-- <div class="slider__card--title">
             Come closer with 3x<br />
             telephoto powered by moto ai
           </div>
 
           <div class="slider__card--subtitle">
             Stunning Photos. Smarter Performance. Quad-curve beauty.
-          </div>
-          <a href="#" class="btn btn-white">Buy now</a>
+          </div> -->
+          <!-- <a href="#" class="btn btn-white">Buy now</a> -->
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="slider__card" style="background-image: url(img/slider-2.jpg)">
-          <div class="slider__card--title">
+        <div class="slider__card" style="background-image: url(img/slider-2.png)">
+          <!-- <div class="slider__card--title">
             Point. Shoot. Edit. <br />Share.Powered by Sony LYTIA<sup>TM</sup>
           </div>
           <div class="slider__card--subtitle">
             Brilliant photography. Sleek design. motorola edge 60 fusion.
-          </div>
-          <a href="#" class="btn btn-white">Buy now</a>
+          </div> -->
+          <!-- <a href="#" class="btn btn-white">Buy now</a> -->
         </div>
       </div>
-      ...
+      <div class="swiper-slide">
+        <div class="slider__card" style="background-image: url(img/slider-3.png)">
+          <!-- <div class="slider__card--title">
+            Point. Shoot. Edit. <br />Share.Powered by Sony LYTIA<sup>TM</sup>
+          </div>
+          <div class="slider__card--subtitle">
+            Brilliant photography. Sleek design. motorola edge 60 fusion.
+          </div> -->
+          <!-- <a href="#" class="btn btn-white">Buy now</a> -->
+        </div>
+      </div>
     </div>
 
     <div class="swiper-button-prev"></div>
@@ -297,7 +307,7 @@
     <div class="footer__official">
       <p>Web oficial</p>
       <a href="#">
-        <img src="icons/logo.svg" alt="logo" />
+        <img src="icons/logo-black.svg" alt="logo" />
       </a>
     </div>
     <div class="footer__social">
@@ -343,6 +353,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

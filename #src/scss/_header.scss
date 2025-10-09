@@ -16,6 +16,11 @@
     gap: 16px;
   }
 
+  &__logo {
+    width: 120px;
+    margin-top: -5px;
+  }
+
   &__left {
     display: flex;
     align-items: center;

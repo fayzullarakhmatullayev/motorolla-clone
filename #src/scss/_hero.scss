@@ -1,18 +1,14 @@
 .hero {
-  height: 700px;
-  background: url('../img/hero.jpg') no-repeat center center/cover;
+  aspect-ratio: 16/6;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
   color: var(--color-white);
-  padding: 0 100px;
+  padding: 0 80px;
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-
-  &.hero-2 {
-    background: url('../img/hero-2.jpg') no-repeat center center/cover;
-  }
-  &.hero-3 {
-    background: url('../img/hero-3.webp') no-repeat center center/cover;
-  }
 
   &__content {
     &--title {
