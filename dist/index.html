@@ -118,38 +118,11 @@
 </section>
  <section class="catalog">
   <div class="catalog__wrapper">
-    <div class="catalog__item">
+    <div class="catalog__item" v-for="card in shops.gamers" :key="card.id">
       <div class="catalog__item--img">
-        <img src="img/catalog-1.jpg" alt="catalog-1" />
+        <img :src="card.img" :alt="card.title" />
       </div>
-      <h3 class="catalog__item--title">Motorola Razr 60 Ultra</h3>
-      <div class="catalog__item--actions">
-        <a href="#" class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
-    <div class="catalog__item">
-      <div class="catalog__item--img">
-        <img src="img/catalog-2.jpg" alt="catalog-2" />
-      </div>
-      <h3 class="catalog__item--title">Motorola Razr 60</h3>
-      <div class="catalog__item--actions">
-        <a href="#" class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
-    <div class="catalog__item">
-      <div class="catalog__item--img">
-        <img src="img/catalog-3.jpg" alt="catalog-3" />
-      </div>
-      <h3 class="catalog__item--title">Motorola edge 60 pro</h3>
-      <div class="catalog__item--actions">
-        <a href="#" class="btn btn-primary">Buy now</a>
-      </div>
-    </div>
-    <div class="catalog__item">
-      <div class="catalog__item--img">
-        <img src="img/catalog-4.jpg" alt="catalog-4" />
-      </div>
-      <h3 class="catalog__item--title">Motorola edge 60</h3>
+      <h3 class="catalog__item--title">{{card.title}}</h3>
       <div class="catalog__item--actions">
         <a href="#" class="btn btn-primary">Buy now</a>
       </div>

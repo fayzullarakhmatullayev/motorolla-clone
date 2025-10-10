@@ -356,7 +356,7 @@ button {
 .catalog__item--title {
   text-align: center;
   font-size: 22px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: 700;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -485,6 +485,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1607843137);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .slider__card--title {
@@ -520,7 +523,7 @@ button {
   background-position: center center;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1607843137);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1607843137);
-  border: 1px solid #efefef;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   overflow: hidden;
   padding: 80px 20px;
