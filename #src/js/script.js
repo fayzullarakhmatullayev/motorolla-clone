@@ -26,10 +26,10 @@ const SHOPS = {
 };
 
 const BLOGS = [
-  { id: 1, img: 'img/blogs/blog-1.jpg', title: 'Joins \nEuroLeague action' },
-  { id: 2, img: 'img/blogs/blog-2.jpg', title: 'Joins the \nFormula 1 grid' },
-  { id: 3, img: 'img/blogs/blog-3.jpg', title: 'Driving change with \nBounce for Good' },
-  { id: 4, img: 'img/blogs/blog-4.jpg', title: 'Express yourself \nwith Pantone' }
+  { id: 1, img: 'img/blogs/blog.webp', title: 'Trend Mobile \nBlogs' },
+  { id: 2, img: 'img/blogs/blog.webp', title: 'Trend Mobile \nBlogs' },
+  { id: 3, img: 'img/blogs/blog.webp', title: 'Trend Mobile \nBlogs' },
+  { id: 4, img: 'img/blogs/blog.webp', title: 'Trend Mobile \nBlogs' }
 ];
 
 const { createApp, ref, computed, onMounted, onBeforeMount } = window.Vue;
