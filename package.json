@@ -1,25 +1,40 @@
 {
-  "name": "new_gulp_layout",
-  "version": "1.0.0",
-  "description": "Gulp Package",
-  "main": "index.js",
+  "name": "motorolla-nuxt-clone",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "start": "gulp"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "author": "Fayzulla Rakhmatullayev",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.27.5",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-file-include": "^2.3.0",
-    "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-imagemin": "^7.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify-es": "^3.0.0",
+  "dependencies": {
+    "@nuxt/eslint": "1.9.0",
+    "aos": "^2.3.4",
+    "eslint": "^9.0.0",
+    "nuxt": "^4.0.3",
+    "nuxt-svgo": "4.2.6",
+    "nuxt-swiper": "2.0.1",
     "sass": "1.77.1",
-    "webp-converter": "^2.2.3"
+    "sass-loader": "^16.0.5",
+    "swiper": "^12.0.2",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^1.9.0",
+    "@nuxtjs/i18n": "^10.1.1",
+    "@pinia/nuxt": "^0.11.2",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^24.7.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "pinia-plugin-persistedstate": "^4.5.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

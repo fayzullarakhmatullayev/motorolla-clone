@@ -1,0 +1,21 @@
+<script lang="ts" setup></script>
+
+<template>
+  <section class="subscribe">
+    <h2 class="subscribe__title">Sign up for our newsletter</h2>
+    <form class="subscribe__form">
+      <div class="subscribe__form--item">
+        <input type="text" placeholder="What is your email?" />
+        <button type="submit">Send</button>
+      </div>
+      <label for="checkbox" class="subscribe__form--privacy">
+        <input id="checkbox" type="checkbox" />
+        <span>
+          I agree to receive product information and special promotional offers by email from Trend Mobile, and I
+          confirm that I am 16 years of age or older. * Valid for first-time sign-ups only and applicable exclusively to
+          smartphone purchases. Not combinable with other discounts or coupons. <a href="#">Privacy Policy</a>
+        </span>
+      </label>
+    </form>
+  </section>
+</template>

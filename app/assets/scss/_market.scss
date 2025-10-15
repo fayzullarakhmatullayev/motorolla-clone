@@ -1,0 +1,81 @@
+.market {
+  padding: 45px 22px 120px;
+
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 40px;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    background: 0;
+    max-width: 631px;
+    gap: 6px;
+
+    &--item {
+      padding: 12px 10px;
+      color: #00142833;
+      font-size: 16px;
+      font-family: inherit;
+      background: white;
+      cursor: pointer;
+      border: 0;
+      width: 100%;
+      font-weight: 700;
+      white-space: nowrap;
+      text-align: center;
+
+      border-bottom: 2px solid transparent;
+      &.active {
+        color: #001428;
+        border-color: #001428;
+        background-color: #fff;
+      }
+    }
+  }
+  &__wrapper {
+    padding: 20px 19.5px;
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    justify-content: center;
+  }
+
+  &__card {
+    border: 0.5px solid hsla(0, 0%, 100%, 0.0509803922);
+    padding: 26px 18px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+
+    &--img {
+      width: 205px;
+      height: 205px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--title {
+      color: #001428;
+      font-size: 24px;
+      padding: 24px 0 46px;
+      min-height: 120px;
+    }
+
+    .btn {
+      margin-top: auto;
+    }
+  }
+}

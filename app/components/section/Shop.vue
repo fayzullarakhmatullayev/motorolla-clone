@@ -1,0 +1,34 @@
+<template>
+  <section class="shop">
+    <div class="shop__wrapper">
+      <div class="shop__card" style="background-image: url(img/shop-1.png)">
+        <!-- <h2 class="shop__card--title">Find your edge</h2>
+      <p class="shop__card--subtitle">Elevate every moment with edge.</p> -->
+        <a href="#" class="btn btn-primary" style="margin-top: 20%">Shop</a>
+      </div>
+      <div class="shop__card" style="background-image: url(img/shop-2.png)">
+        <!-- <h2 class="shop__card--title">Stylish yet durable</h2>
+      <p class="shop__card--subtitle">Tackle life in style with <b>moto g.</b></p> -->
+        <a href="#" class="btn btn-primary" style="margin-top: 20%">Shop</a>
+      </div>
+      <div class="shop__card" style="background-image: url(img/shop-3.png)">
+        <!-- <h2 class="shop__card--title">
+        Pantone Colour of <br />
+        the Year 2025
+      </h2> -->
+        <!-- <p class="shop__card--subtitle">PANTONE Mocha Mousse, now on razr and edge.</p> -->
+        <a href="#" class="btn btn-primary" style="margin-top: 25%">Learn more</a>
+      </div>
+      <div class="shop__card" style="background-image: url(img/shop-4.png)">
+        <!-- <h2 class="shop__card--title">
+        Stay covered with <br />
+        Moto Care
+      </h2>
+      <p class="shop__card--subtitle">Protect your smartphone experience.</p> -->
+        <a href="#" class="btn btn-primary" style="margin-top: 25%">Learn more</a>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script lang="ts" setup></script>

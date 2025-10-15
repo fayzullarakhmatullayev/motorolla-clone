@@ -1,0 +1,42 @@
+.shop {
+  padding: 22px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__card {
+    min-height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 15px #00000029;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--title {
+      font-size: 44px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &--subtitle {
+      font-size: 18px;
+      font-weight: 500;
+      padding: 15px 0;
+
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}
